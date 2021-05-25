@@ -17,9 +17,15 @@ Output:
     GOES: 'vroom',
 }
 */
-
+// MORE HOOTING AND HOLLARING I TELL YOU
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    const moreScreamingBois = {};
+    for(let key in someObject) {
+        let value = someObject[key];
+        let upperCaseKey = key.toUpperCase();
+        moreScreamingBois[upperCaseKey] = value;
+    }
+    return moreScreamingBois;
 }
 
 /*
@@ -36,7 +42,6 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
 }
 
 
@@ -50,5 +55,4 @@ Output:
 */
 
 export function makeTuples(someObject) {
-    return [];
 }

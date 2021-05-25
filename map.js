@@ -19,7 +19,8 @@ Output:
 */
 
 export function makeArrayOfNamesWithMap(arr) {
-    return [];
+    const names = arr.map(item => item.name)
+    return names;
 }
 
 /*
@@ -33,7 +34,12 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    const hungryBois = arr.map((item) => {
+        if (item.isHungry = true) {
+            return item
+        }
+    })
+    return hungryBois;
 }
 
 /*
@@ -46,8 +52,13 @@ Output:
     { name: 'EINSTEIN', type: 'cat' },
 ]*/
 
+// You can see me here start to lose my mind and make these conts :^)
 export function makeShoutingArray(arr) {
-    return [];
+    const hootingAndHollering = arr.map(item => ({
+        name: item.name.toUpperCase(), type: item.type
+    }))
+
+    return hootingAndHollering;
 }
 
 
@@ -58,7 +69,8 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    const whyAreYouMakingYourPetsIntoStrings = arr.map (item => item.name + item.type)
+    return whyAreYouMakingYourPetsIntoStrings;
 }
 
 /*
